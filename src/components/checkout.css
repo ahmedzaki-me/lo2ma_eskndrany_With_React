@@ -1,0 +1,110 @@
+.order .container {
+  padding-block: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.order .container > * {
+  border: 1px solid #ccc;
+  box-shadow:
+    -3px 3px 11px var(--color-shadow),
+    3px 6px 11px var(--color-shadow);
+}
+.order .container .items-in-cart-page {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.order .container .items-in-cart-page h3 {
+  padding: 15px 5px 0px;
+}
+.order .container .items-in-cart-page .items {
+  display: flex;
+  flex-direction: column;
+  border-block: 1px solid #ccc;
+  /* overflow-x: hidden; */
+  /* overflow-y: scroll; */
+  /* height: 500px; */
+}
+.order .container .items .item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px 5px 15px 15px;
+  gap: 15px;
+}
+.order .container .items .item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.order .container .items .item img {
+  width: 90px;
+}
+.order .container .items .item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.order .container .items .item .text .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order .container .items .item .text .quantity span.quantity {
+  width: 10px;
+  margin: 0 5px;
+}
+.order .container .items .item .text .quantity button {
+  padding: 0px 5px;
+}
+.order .container .items .item .text .quantity .number-of-item {
+  display: flex;
+  padding: 3px;
+  margin-right: 3px;
+}
+.order .container .items .item .text .quantity .num {
+  font-weight: bold;
+}
+.order .container .items .item .text .price {
+  font-weight: bold;
+}
+
+.order .container .items-in-cart-page .feet {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+.order .container .items .item .trash {
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.order .container .items .item .trash i:hover {
+  color: var(--color-primary);
+}
+
+.order .container .contact-info {
+  align-self: flex-start;
+}
+.order .container .contact-info form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  gap: 10px;
+}
+.order .container .contact-info form > * {
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+}
+.order .container .contact-info form textarea {
+  height: 100px;
+  resize: none;
+}

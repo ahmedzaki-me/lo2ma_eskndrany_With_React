@@ -1,0 +1,105 @@
+:root {
+  /* الأساسيات */
+  --color-primary: #b30000; /* الأحمر الرئيسي */
+  --color-secondary: #4e8b82; /* الفيروزي */
+  --color-accent: #341f14; /* البني */
+  --color-background: #fafafa; /* الخلفية الدافئة */
+  --color-surface: #f5d391; /* الخلفيات الفاتحة داخل الكروت أو الأقسام */
+
+  /* mood btn */
+  --color-mood-btn: #2b1e13;
+
+  /* النصوص */
+  --color-text-main: #2b1e13; /* النص الأساسي */
+  --color-text-light: #fff9f2; /* النص الفاتح فوق الخلفيات الغامقة */
+  --color-text-muted: #6b3a1eb6; /* نصوص ثانوية */
+
+  /* الأزرار */
+  --btn-bg: var(--color-accent);
+  --btn-text: #fff;
+  --btn-hover-bg: #856353;
+
+  /* الحدود والظلال */
+  --color-border: rgba(43, 30, 19, 0.521);
+  --color-shadow: rgba(43, 30, 19, 0.15);
+
+  /* الروابط */
+  --link-color: var(--color-secondary);
+  --link-hover: #3a6c65;
+  /* ========= */
+  --main-transition: 0.3s;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "cairo", sans-serif;
+  background-color: var(--color-background);
+  padding: 0;
+  margin: 0;
+  /* text-align: center; */
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+div:focus {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+p {
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: -2px 2px 12px var(--color-shadow);
+}
+button {
+  color: var(--btn-text);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--btn-hover-bg);
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+

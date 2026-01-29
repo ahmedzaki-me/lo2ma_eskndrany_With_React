@@ -1,0 +1,63 @@
+.items .container {
+  padding-block: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.items .container .item-box {
+  background-color: var(--color-surface);
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 2px 4px 15px 2px var(--color-shadow);
+}
+
+.items .container .item-box .text {
+  padding: 15px;
+}
+.items .text h3 {
+  color: var(--color-text-main);
+  margin-bottom: 8px;
+}
+.items .text p {
+  color: var(--color-text-muted);
+}
+.items .text .box-feet {
+  margin-top: 8px;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+}
+.items .text .box-feet span.price {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--color-text-main);
+}
+.items .text .box-feet button.add-item {
+  padding: 0;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-accent);
+}
+.items .text .box-feet button.add-item.done {
+  color: var(--color-secondary);
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.items .text .box-feet button.add-item i {
+  cursor: pointer;
+}
+.items .text .additions {
+  padding-block: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+}
+.items .text .additions label {
+  color: var(--color-text-muted);
+}

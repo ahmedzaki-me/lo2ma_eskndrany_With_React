@@ -1,0 +1,111 @@
+footer {
+  padding-top: 40px;
+  /* background-color: #191919; */
+  background-color: var(--color-accent);
+  color: var(--color-text-light) !important;
+}
+footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+}
+footer .container .social {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .container .social > a {
+  width: 80px;
+  display: block;
+}
+footer .container .social .links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  footer .container .social .links {
+    justify-content: center;
+  }
+}
+footer .container .social .links a {
+  display: block;
+  color: #b9b9b9;
+  padding: 13px;
+  /* background-color: #313131; */
+  background-color: #61524b;
+
+  font-size: 20px;
+  transition: var(--main-transition);
+  border-radius: 4px;
+}
+footer .container .social .links a:nth-child(1):hover {
+  background-color: #1877f2;
+}
+footer .container .social .links a:nth-child(2):hover {
+  background: linear-gradient(0deg, #feda77, #dd2a7b, #8134af, #515bd4);
+  /* background-color: #df0064; */
+}
+footer .container .social .links a:nth-child(3):hover {
+  background-color: #25d366;
+}
+footer .container .social p {
+  margin: 20px 0;
+  /* color: white; */
+  font-size: 19px;
+}
+/* ============================== */
+footer .contact > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+footer .contact i {
+  font-size: 25px;
+  color: var(--main-color);
+  margin: 0 0 5px;
+}
+footer .contact a {
+  color: #b9b9b9;
+  transition: var(--main-transition);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contact a:hover {
+  color: var(--main-color);
+  /* padding-right: 5px; */
+}
+/* ========================= */
+footer .copyRight {
+  background-color: #191919;
+  border-top: 1px solid #999;
+  padding-block: 40px;
+  margin-top: 25px;
+}
+footer .copyRight .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+}
+footer .copyRight .container span.zaki {
+  font-size: 18px;
+  color: var(--color-surface);
+  cursor: pointer;
+}
