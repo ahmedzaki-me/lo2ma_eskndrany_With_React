@@ -1,10 +1,9 @@
 import "../components/checkout.css";
 import useCart from "../hooks/useCart";
-
+import Form from "../components/CheckoutForm";
 export default function Checkout() {
   const {
     cartItems,
-    // setCartItems,
     subTotal,
     increaseCount,
     decreaseCount,
@@ -63,36 +62,7 @@ export default function Checkout() {
           </div>
         </div>
         <div className="contact-info">
-          <form>
-            <input
-              type="text"
-              placeholder="الاسم"
-              className="inputName"
-              required
-            />
-            <input
-              dir="rtl"
-              type="tel"
-              pattern="^01[0-2,5]{1}[0-9]{8}$"
-              placeholder="رقم الهاتف"
-              id="phone"
-              className="inputNumber"
-              required
-            />
-            <input
-              type="text"
-              placeholder="العنوان"
-              className="inputAddress"
-              required
-            />
-            <textarea
-              className="comments"
-              placeholder="أي ملاحظات تخص الطلب؟"
-            ></textarea>
-            <button type="submit" className="check-out-btn">
-              إرسال الطلب
-            </button>
-          </form>
+          <Form />
         </div>
       </div>
     </div>
