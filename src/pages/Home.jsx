@@ -1,6 +1,6 @@
 import ProductCard from "../components/ProductCard";
 import useProducts from "../hooks/useProducts";
-import Categories from "../components/categories";
+import Categories from "../components/Categories";
 import SideCart from "../components/SideCart";
 
 export default function Home() {
@@ -24,3 +24,4 @@ export default function Home() {
     </>
   );
 }
+
